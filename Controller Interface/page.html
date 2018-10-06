@@ -5,22 +5,37 @@
     <meta charset="utf-8" />
     <title>Plotter controller</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script type="text/javascript" src="script.js"> </script>
 </head>
 <body>
     <div class="wrapper">
         <div class="panel" id="">
-            MAIN
+            <h3 id="mainWindow">Machine position</h3>
+            <div class="xy-window">
+                <div class="xline" id="xline" style="border:1px solid black;width:0px;height:600px;position:absolute;top:0px;left:299px;"></div>
+                <div class="yline" id="yline" style="border:1px solid black;width:600px;height:0px;position:absolute;top:299px;left:0px;"></div>
+                <svg width="600" height="600">
+                    <circle r="10" cx="300" cy="300" stroke="black" stroke-width="2" fill="none"></circle>
+                </svg>
+                <div class="slidercontainerX">
+                    <div id="x grid">X:</div>
+                    <div><input type="range" min="0" max="599" value="299" class="slider" id="myRangeX" oninput="updateX()"></div>
+                </div>
+                <div class="slidercontainerY">
+                    <div id="y grid">Y:</div>
+                    <div><input type="range" min="0" max="599" value="299" class="slider" id="myRangeY" oninput="updateY()"></div>
+                </div>
+            </div>
         </div>
         <div class="panel">
             <div class="dataWrapper">
-                <div class="dataPanel">DATAPANEL</div>
-                <div class="dataPanel">DATAPANEL</div>
-                <div class="dataPanel">DATAPANEL</div>
-                <div class="dataPanel">DATAPANEL</div>
+                <div class="dataPanel">Status</div>
+                <div class="dataPanel">Coordinates</div>
+                <div class="dataPanel">Manual entry</div>
+                <div class="dataPanel">Jog</div>
 
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

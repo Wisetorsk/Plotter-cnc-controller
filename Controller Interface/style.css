@@ -26,3 +26,79 @@
 .dataPanel {
     background-color: lightblue;
 }
+
+.xy-window {
+    
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+/*
+.yline {
+    border: 1px solid black;
+    width: 600px;
+    height: 0px;
+    position: absolute;
+    top: 299px;
+    left: 0px;
+}
+
+.xline {
+    border: 1px solid black;
+    width: 0px;
+    height: 600px;
+    position: absolute;
+    top: 0px;
+    left: 299px;
+}
+    */
+
+.slidecontainerX .slidercontainerY {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 500px;
+    grid-template-rows: 25px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 500px;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+#mainWindow {
+    border: 1px dashed red;
+    border-radius: 10%;
+    background-color: white;
+    width: 200px;
+    text-align: center;
+    margin-left: 300px;
+}
