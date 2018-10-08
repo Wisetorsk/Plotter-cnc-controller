@@ -25,10 +25,11 @@
 
 .dataPanel {
     background-color: lightblue;
+    border: black 2px solid;
 }
 
 .xy-window {
-    
+    border: black dashed 2px;
     width: 600px;
     height: 600px;
     background-color: white;
@@ -101,4 +102,59 @@
     width: 200px;
     text-align: center;
     margin-left: 300px;
+    text-decoration: underline;
 }
+
+#jogPanel {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px;
+    padding-left: 130px;
+}
+
+#jogHeader {
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+
+ul#statusList {
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+}
+
+.dirButton {
+    font-family: italic;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 200%;
+    border-radius: 50%;
+}
+
+input.coordinateInput {
+    width: 50px;
+}
+
+div#y, div#x  {
+    text-align: center;
+    align-content: center;
+    font-size: 200%;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+ul#coordinateInput, ul#machineCoordinates {
+    list-style: none;
+}
+
+ul#coordinateInput > li {
+    padding: 5px;
+}
+
+/*
+ul#statusList > li {
+    
+}
+*/
+
