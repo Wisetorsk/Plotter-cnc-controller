@@ -132,6 +132,10 @@ ul#statusList {
     border-radius: 50%;
 }
 
+.dirButton:hover {
+    background-color: aqua;
+}
+
 input.coordinateInput {
     width: 50px;
 }
