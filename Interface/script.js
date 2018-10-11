@@ -1,12 +1,12 @@
 // JavaScript source code
 function updateX() {
     console.log("updateX");
-    document.getElementById('xline').style.left = document.getElementById('myRangeX').value;
+    document.getElementById('xline').style.left = document.getElementById('myRangeX').value + 'px';
 }
 
 function updateY() {
     console.log("updateY");
-    document.getElementById('yline').style.top = document.getElementById('myRangeY').value;
+    document.getElementById('yline').style.top = document.getElementById('myRangeY').value + 'px';
 }
 
 function xjog(element) {
