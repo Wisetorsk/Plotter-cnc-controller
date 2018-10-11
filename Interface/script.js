@@ -1,12 +1,20 @@
 // JavaScript source code
 function updateX() {
     console.log("updateX");
-    document.getElementById('xline').style.left = document.getElementById('myRangeX').value + 'px';
+    xVal = document.getElementById('myRangeX').value;
+    document.getElementById('xline').style.left = xVal + 'px';
+    xVal++;
+    document.getElementById('point').setAttributeNS(null, 'cx', xVal);
+    document.getElementById('xCoordinate').innerHTML = 'X: ' + xVal;
 }
 
 function updateY() {
     console.log("updateY");
-    document.getElementById('yline').style.top = document.getElementById('myRangeY').value + 'px';
+    yVal = document.getElementById('myRangeY').value;
+    document.getElementById('yline').style.top = yVal + 'px';
+    yVal++;
+    document.getElementById('point').setAttributeNS(null, 'cy', yVal);
+    document.getElementById('yCoordinate').innerHTML = 'Y: ' + yVal;
 }
 
 function xjog(element) {
